@@ -1,0 +1,48 @@
+{
+    "name": "horizom/http-server",
+    "description": "Reverse proxy for PHP built-in server which supports multiprocessing and TLS/SSL encryption",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "built-in",
+        "builtin",
+        "reverse",
+        "proxy",
+        "server",
+        "TLS",
+        "SSL",
+        "multiprocess",
+        "multiprocessing"
+    ],
+    "support": {
+        "issues": "https://github.com/horizom/http-server/issues",
+        "source": "https://github.com/horizom/http-server"
+    },
+    "authors": [
+        {
+            "name": "Roland Edi",
+            "email": "lambirou225@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Horizom\\HttpServer\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "lib-openssl": "*",
+        "react/child-process": "^0.4.1",
+        "react/promise": "^2.4"
+    },
+    "require-dev": {
+        "php": ">=7.0.0",
+        "codeception/aspect-mock": "^2.0",
+        "codeception/codeception": "^2.2",
+        "codeception/specify": "^0.4.6",
+        "satooshi/php-coveralls": "^1.0",
+        "mpyw/privator": "^2.0",
+        "mpyw/co": "^1.5"
+    },
+    "bin": ["horizom-serve"]
+}

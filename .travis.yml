@@ -1,0 +1,24 @@
+language: php
+
+php:
+  - 7.0.8
+
+install:
+  - composer install
+  - ./vendor/bin/codecept build
+
+sudo: false
+
+cache:
+  directories:
+    - ./vendor
+    - $HOME/.composer/cache
+
+script:
+  - ./horizom-serve -S localhost:8000 -s localhost:44300 -n 5 -t examples &
+  - vendor/bin/codecept run unit
+  - kill $!
+
+branches:
+  only:
+    - master
