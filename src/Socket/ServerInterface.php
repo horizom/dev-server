@@ -1,6 +1,6 @@
 <?php
 
-namespace Horizom\HttpServer\Socket;
+namespace Horizom\DevServer\Socket;
 
 use Evenement\EventEmitterInterface;
 

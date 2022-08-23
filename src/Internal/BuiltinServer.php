@@ -1,6 +1,6 @@
 <?php
 
-namespace Horizom\HttpServer\Internal;
+namespace Horizom\DevServer\Internal;
 
 use React\ChildProcess\Process;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Horizom\HttpServer\Internal;
+namespace Horizom\DevServer\Internal;
 
-use Horizom\HttpServer\Socket\ConnectionInterface;
+use Horizom\DevServer\Socket\ConnectionInterface;
 use React\Stream\WritableStreamInterface;
 
 class Sink

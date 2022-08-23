@@ -1,10 +1,10 @@
 <?php
 
-namespace Horizom\HttpServer;
+namespace Horizom\DevServer;
 
-use Horizom\HttpServer\Internal\ConnectionHandler;
-use Horizom\HttpServer\Internal\Queue;
-use Horizom\HttpServer\Socket\Server;
+use Horizom\DevServer\Internal\ConnectionHandler;
+use Horizom\DevServer\Internal\Queue;
+use Horizom\DevServer\Socket\Server;
 use React\EventLoop\LoopInterface;
 
 class Master

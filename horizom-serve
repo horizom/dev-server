@@ -86,7 +86,7 @@ function startListener($master, $listener)
 
     try {
         call_user_func_array([$master, 'addListener'], $listener);
-    } catch (Horizom\HttpServer\Socket\ConnectionException $exception) {
+    } catch (Horizom\DevServer\Socket\ConnectionException $exception) {
         $reason = 'Address already in use';
 
         $isPortSpecified = $listener[4];
@@ -153,12 +153,12 @@ try {
     $loop = React\EventLoop\Factory::create();
 
     $usedProcesses = [];
-    $factory = new Horizom\HttpServer\BuiltinServerFactory($loop);
+    $factory = new Horizom\DevServer\BuiltinServerFactory($loop);
     $factory
         ->createMultipleAsync($number, '127.0.0.1', $docroot, $router)
         ->then(function (array $processes) use ($loop, $listeners, &$usedProcesses) {
             $usedProcesses = $processes;
-            $master = new Horizom\HttpServer\Master($loop, $processes);
+            $master = new Horizom\DevServer\Master($loop, $processes);
             foreach ($listeners as $listener) {
                 startListener($master, $listener);
             }

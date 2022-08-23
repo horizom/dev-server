@@ -1,9 +1,9 @@
 <?php
 
-namespace Horizom\HttpServer\Internal;
+namespace Horizom\DevServer\Internal;
 
-use Horizom\HttpServer\Master;
-use Horizom\HttpServer\Socket\ConnectionInterface;
+use Horizom\DevServer\Master;
+use Horizom\DevServer\Socket\ConnectionInterface;
 use React\Stream\Stream;
 use React\Promise\Deferred;
 

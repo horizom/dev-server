@@ -1,8 +1,8 @@
 <?php
 
-namespace Horizom\HttpServer;
+namespace Horizom\DevServer;
 
-use Horizom\HttpServer\Internal\BuiltinServer;
+use Horizom\DevServer\Internal\BuiltinServer;
 use React\EventLoop\LoopInterface;
 use React\Stream\Stream;
 use React\Promise\Deferred;

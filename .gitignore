@@ -1,4 +1,11 @@
-/vendor/
-/composer.lock
+.DS_Store
+.phpunit.result.cache
+.env
+.env.backup
 
-tests/_output/*
+/.vscode
+/node_modules
+/vendor
+
+npm-debug.log
+yarn-error.log

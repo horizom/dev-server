@@ -1,10 +1,10 @@
 <p align="center">
-<a href="https://packagist.org/packages/horizom/http-server"><img src="https://poser.pugx.org/horizom/http-server/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/horizom/http-server"><img src="https://poser.pugx.org/horizom/http-server/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/horizom/http-server"><img src="https://poser.pugx.org/horizom/http-server/license.svg" alt="License"></a>
+<a href="https://packagist.org/packages/horizom/dev-server"><img src="https://poser.pugx.org/horizom/dev-server/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/horizom/dev-server"><img src="https://poser.pugx.org/horizom/dev-server/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/horizom/dev-server"><img src="https://poser.pugx.org/horizom/dev-server/license.svg" alt="License"></a>
 </p>
 
-# Horizom Http Server
+# Horizom Dev Server
 
 Reverse proxy for PHP built-in server which supports multiprocessing and TLS/SSL encryption.
 
@@ -13,7 +13,7 @@ Reverse proxy for PHP built-in server which supports multiprocessing and TLS/SSL
 ### Global install
 
 ```shell script
-composer global require horizom/http-server
+composer global require horizom/dev-server
 ```
 
 If not yet, you must add **`~/.composer/vendor/bin`** to `$PATH`.  
@@ -26,7 +26,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 ### Local install only for development environment
 
 ```shell script
-composer require --dev horizom/http-server
+composer require --dev horizom/dev-server
 ```
 
 Use **`vendor/bin/horizom-serve`** as the execution path.
@@ -82,7 +82,7 @@ Example:
     -t   Path for the document root. Default is the current directory.
     -r   Path for the router script. Default is empty.
     -c   Path for the PEM-encoded certificate.
-         Default is "/Users/username/.composer/vendor/horizom/http-server/certificate.pem".
+         Default is "/Users/username/.composer/vendor/horizom/dev-server/certificate.pem".
 
 Restrictions:
     - The option -s is only supported on PHP 5.6.0 or later.
@@ -99,14 +99,14 @@ Unfortunately, `cmd.exe` has no option to run via shebang `#!/usr/bin/env php`, 
 
 ```bat
 @echo OFF
-"C:\php\php.exe" "%HOMEPATH%\.composer\vendor\horizom\http-server\horizom-serve" %*
+"C:\php\php.exe" "%HOMEPATH%\.composer\vendor\horizom\dev-server\horizom-serve" %*
 ```
 
 ### For XAMPP
 
 ```bat
 @echo OFF
-"C:\xampp\php\php.exe" "%HOMEPATH%\.composer\vendor\horizom\http-server\horizom-serve" %*
+"C:\xampp\php\php.exe" "%HOMEPATH%\.composer\vendor\horizom\dev-server\horizom-serve" %*
 ```
 
 ## License
